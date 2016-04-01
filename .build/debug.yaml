@@ -1,0 +1,26 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  default: [<HelloSwift.module>, <HelloSwift.exe>]
+  test: []
+commands: 
+  <HelloSwift.module>:
+    tool: swift-compiler
+    executable: /home/gdc/dev/swift-2.2/usr/bin/swiftc
+    module-name: HelloSwift
+    module-output-path: /home/gdc/ClionProjects/HelloSwift/.build/debug/HelloSwift.swiftmodule
+    inputs: []
+    outputs: [<HelloSwift.module>, /home/gdc/ClionProjects/HelloSwift/.build/debug/HelloSwift.build/main.swift.o]
+    import-paths: /home/gdc/ClionProjects/HelloSwift/.build/debug
+    temps-path: /home/gdc/ClionProjects/HelloSwift/.build/debug/HelloSwift.build
+    objects: [/home/gdc/ClionProjects/HelloSwift/.build/debug/HelloSwift.build/main.swift.o]
+    other-args: ["-j8", "-Onone", "-g", "-D", SWIFT_PACKAGE, "-enable-testing"]
+    sources: [/home/gdc/ClionProjects/HelloSwift/main.swift]
+    is-library: false
+  <HelloSwift.exe>:
+    tool: shell
+    description: Linking HelloSwift
+    inputs: [<HelloSwift.module>]
+    outputs: [<HelloSwift.exe>, /home/gdc/ClionProjects/HelloSwift/.build/debug/HelloSwift]
+    args: ["/home/gdc/dev/swift-2.2/usr/bin/swiftc", "-emit-executable", "-g", "-o", /home/gdc/ClionProjects/HelloSwift/.build/debug/HelloSwift, /home/gdc/ClionProjects/HelloSwift/.build/debug/HelloSwift.build/main.swift.o]

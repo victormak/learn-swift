@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/home/gdc/ClionProjects/HelloSwift/.build/debug/HelloSwift.build/master.swiftdeps"
+  },
+  "/home/gdc/ClionProjects/HelloSwift/main.swift": {
+    "dependencies": "/home/gdc/ClionProjects/HelloSwift/.build/debug/HelloSwift.build/main.d",
+    "object": "/home/gdc/ClionProjects/HelloSwift/.build/debug/HelloSwift.build/main.swift.o",
+    "swiftmodule": "/home/gdc/ClionProjects/HelloSwift/.build/debug/HelloSwift.build/main~partial.swiftmodule",
+    "swift-dependencies": "/home/gdc/ClionProjects/HelloSwift/.build/debug/HelloSwift.build/main.swiftdeps"
+  }
+}
