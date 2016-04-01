@@ -393,6 +393,7 @@ struct Matrix {
 //                print("\(self[i,j])")
 //            }
 //        }
+        // swift traverse method
         print("-----------stride---------")
         for i in 0.stride(to: rows, by: 1){
             for j in 0.stride(to: columns, by: 1) {
