@@ -442,3 +442,33 @@ class Train: Vehicle {
 
 let train = Train()
 train.makeNoise()
+
+class Food {
+    var name: String
+    init (name: String){
+        self.name = name
+    }
+    convenience init(){
+        self.init(name: "[Unnamed]")
+    }
+}
+
+let mysteryMeat = Food()
+print("food name: \(mysteryMeat.name)")
+
+class RecipeIngredient: Food {
+    var quantity: Int
+    init(name: String, quantity: Int){
+        self.quantity = quantity
+        super.init(name: name)
+    }
+    override convenience init(name: String){
+        self.init(name: name,quantity:1 )
+    }
+}
+
+let oneMysteryItem = RecipeIngredient()
+let oneBacon = RecipeIngredient(name: "bacon")
+let sixEggs = RecipeIngredient(name: "eggs", quantity:6)
+
+print(sixEggs.name)

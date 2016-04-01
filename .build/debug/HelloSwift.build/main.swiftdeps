@@ -64,6 +64,12 @@ provides-top-level:
 - "Tandem"
 - "Train"
 - "train"
+- "Food"
+- "mysteryMeat"
+- "RecipeIngredient"
+- "oneMysteryItem"
+- "oneBacon"
+- "sixEggs"
 provides-nominal:
 - "O10HelloSwift19VendingMachineError"
 - "O10HelloSwift7Barcode"
@@ -81,6 +87,8 @@ provides-nominal:
 - "C10HelloSwift7Bicycle"
 - "C10HelloSwift6Tandem"
 - "C10HelloSwift5Train"
+- "C10HelloSwift4Food"
+- "C10HelloSwift16RecipeIngredient"
 provides-member:
 - ["O10HelloSwift19VendingMachineError", ""]
 - ["O10HelloSwift7Barcode", ""]
@@ -98,100 +106,108 @@ provides-member:
 - ["C10HelloSwift7Bicycle", ""]
 - ["C10HelloSwift6Tandem", ""]
 - ["C10HelloSwift5Train", ""]
+- ["C10HelloSwift4Food", ""]
+- ["C10HelloSwift16RecipeIngredient", ""]
 depends-top-level:
-- "!="
-- "foo"
-- !private "<="
-- "result"
-- "String"
-- "StringLiteralType"
-- "stepBackward"
-- "str1"
-- "TimeTable"
-- "currentValue"
-- "namess"
-- "somePoint"
-- !private "/"
-- "anotherInt"
-- "Rect"
-- "moveNearToZero"
-- "stepCounter"
-- "DataImporter"
-- "manager"
-- "bike"
-- "serverResponseCode"
-- !private "assert"
-- "possible"
-- "testArray"
-- "..."
-- "names"
-- "ExtendedGraphemeClusterType"
-- "ErrorType"
-- !private "-"
-- "swapTwoInts"
-- "mathFunc"
-- "FloatLiteralType"
-- !private "<"
-- "findMaxMin"
-- "VendingMachineError"
-- "someInts"
-- "BooleanLiteralType"
-- "matrix"
-- "addTwoInts"
-- ">"
-- "servCode"
-- "maple"
-- !private "~="
-- "productBarcode"
-- "square"
-- "IntegerLiteralType"
-- "Train"
-- "someDoubles"
-- "Double"
-- "convert"
-- "UnicodeScalarType"
-- "..<"
-- "initSquareCenter"
-- "train"
-- "possibleNumber"
-- "shopList"
-- "stepForward"
-- "Vehicle"
-- "player"
 - "chooseStepFunction"
-- !private ">="
-- "someInt"
-- "Point"
-- "Bool"
-- "assumeString"
-- "+="
-- "Array"
-- "LevelTracker"
-- "implicitString"
-- "+"
-- "integerToDescribe"
-- !private "*"
-- "Player"
-- "Matrix"
-- "count"
-- "nameOfIntegers"
-- "Int"
-- "StepCounter"
+- "train"
 - "print"
-- "description"
-- "threeTimesTable"
-- "sayHello"
-- "reverse"
-- "DataManager"
-- "Size"
-- "convertNumber"
+- "String"
+- "VendingMachineError"
+- "LevelTracker"
+- !private "<="
+- "Array"
+- "matrix"
+- "str1"
 - "Set"
-- "Tandem"
+- "findMaxMin"
+- "anotherInt"
+- "sayHello"
+- "testArray"
+- "serverResponseCode"
+- "possibleNumber"
+- !private ">="
+- "square"
+- "nameOfIntegers"
+- !private "assert"
+- "!="
+- "+="
 - "Bicycle"
-- !private "&&"
-- "Barcode"
-- "multiplyTwoInts"
+- "Train"
+- "description"
+- "StepCounter"
+- "implicitString"
 - "strSets"
+- "someInts"
+- "Double"
+- "TimeTable"
+- "assumeString"
+- "+"
+- "sixEggs"
+- !private "/"
+- ">"
+- "RecipeIngredient"
+- "servCode"
+- "Bool"
+- "addTwoInts"
+- "Tandem"
+- "stepBackward"
+- "DataImporter"
+- "mysteryMeat"
+- "somePoint"
+- "swapTwoInts"
+- "Size"
+- "ExtendedGraphemeClusterType"
+- "productBarcode"
+- "DataManager"
+- "oneMysteryItem"
+- "convert"
+- "namess"
+- "multiplyTwoInts"
+- "Int"
+- "integerToDescribe"
+- "bike"
+- "threeTimesTable"
+- "shopList"
+- "Rect"
+- "stepForward"
+- "foo"
+- "convertNumber"
+- "moveNearToZero"
+- !private "~="
+- "oneBacon"
+- "Food"
+- "Matrix"
+- "IntegerLiteralType"
+- "currentValue"
+- "maple"
+- !private "<"
+- "Barcode"
+- "manager"
+- "reverse"
+- !private "&&"
+- "FloatLiteralType"
+- "BooleanLiteralType"
+- !private "-"
+- "count"
+- "ErrorType"
+- "Vehicle"
+- "UnicodeScalarType"
+- !private "*"
+- "mathFunc"
+- "someDoubles"
+- "someInt"
+- "initSquareCenter"
+- "..."
+- "Point"
+- "player"
+- "result"
+- "stepCounter"
+- "..<"
+- "StringLiteralType"
+- "possible"
+- "names"
+- "Player"
 depends-member:
 - ["Ps9AnyObject", "DataImporter"]
 - ["Ps9AnyObject", "LevelTracker"]
@@ -206,8 +222,10 @@ depends-member:
 - ["Ps9AnyObject", "importer"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "makeNoise"]
+- ["Ps9AnyObject", "name"]
 - !private ["Ps9AnyObject", "playerName"]
 - !private ["Ps9AnyObject", "print"]
+- ["Ps9AnyObject", "quantity"]
 - ["Ps9AnyObject", "totalSteps"]
 - ["Ps9AnyObject", "tracker"]
 - ["Ps9AnyObject", ""]
@@ -468,6 +486,13 @@ depends-member:
 - ["Ps41ExtendedGraphemeClusterLiteralConvertible", "removeAtIndex"]
 - ["Ps41ExtendedGraphemeClusterLiteralConvertible", "startIndex"]
 - ["Sf", "deinit"]
+- ["C10HelloSwift4Food", "Int"]
+- ["C10HelloSwift4Food", "String"]
+- ["C10HelloSwift4Food", "deinit"]
+- ["C10HelloSwift4Food", "init"]
+- ["C10HelloSwift4Food", "name"]
+- ["C10HelloSwift4Food", "quantity"]
+- ["C10HelloSwift4Food", ""]
 - ["Ps16ForwardIndexType", "Distance"]
 - ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - ["Ps16ForwardIndexType", "Stride"]
@@ -672,6 +697,12 @@ depends-member:
 - ["Ps30RangeReplaceableCollectionType", "sort"]
 - ["Ps30RangeReplaceableCollectionType", "startIndex"]
 - ["Ps30RangeReplaceableCollectionType", "subscript"]
+- ["C10HelloSwift16RecipeIngredient", "Int"]
+- ["C10HelloSwift16RecipeIngredient", "String"]
+- ["C10HelloSwift16RecipeIngredient", "deinit"]
+- ["C10HelloSwift16RecipeIngredient", "init"]
+- ["C10HelloSwift16RecipeIngredient", "name"]
+- ["C10HelloSwift16RecipeIngredient", "quantity"]
 - ["V10HelloSwift4Rect", "Point"]
 - ["V10HelloSwift4Rect", "Size"]
 - ["V10HelloSwift4Rect", "center"]
@@ -1044,6 +1075,7 @@ depends-nominal:
 - "Ps9ErrorType"
 - "Ps41ExtendedGraphemeClusterLiteralConvertible"
 - "Sf"
+- "C10HelloSwift4Food"
 - "Ps16ForwardIndexType"
 - "Ps13GeneratorType"
 - "Vs16HalfOpenInterval"
@@ -1074,6 +1106,7 @@ depends-nominal:
 - "Vs5Range"
 - "Vs14RangeGenerator"
 - "Ps30RangeReplaceableCollectionType"
+- "C10HelloSwift16RecipeIngredient"
 - "V10HelloSwift4Rect"
 - "Ps12SequenceType"
 - "Vs3Set"
@@ -1144,4 +1177,4 @@ depends-external:
 - "/home/gdc/dev/swift-2.2/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/home/gdc/dev/swift-2.2/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
 - "/home/gdc/dev/swift-2.2/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
-interface-hash: "ac1cb1f6e0610c8264c488ac394304fb"
+interface-hash: "3ab0a92f3b3dccbbb2361cc94201e6f6"

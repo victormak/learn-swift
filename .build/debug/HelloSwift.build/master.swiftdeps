@@ -1,5 +1,5 @@
 version: "Swift version 3.0-dev (LLVM b361b0fc05, Clang 11493b0f62, Swift 24a0c3de75)"
 options: "01a21a2245b9af0630295c696bd8ba11"
-build_time: [512804278, 563556000]
+build_time: [512823635, 213885000]
 inputs:
-  "/home/gdc/ClionProjects/HelloSwift/main.swift": [512804278, 0]
+  "/home/gdc/ClionProjects/HelloSwift/main.swift": [512823634, 0]
